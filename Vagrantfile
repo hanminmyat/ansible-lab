@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 UBUNTU_IMAGE = "bento/ubuntu-22.04"
-CENTOS_IMAGE = "centos/8"
+CENTOS_IMAGE = "bento/centos-stream-8"
 DEBIAN_IMAGE = "debian/jessie64"
 
 Vagrant.configure("2") do |config|

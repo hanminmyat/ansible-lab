@@ -14,3 +14,14 @@
       name: apache2
       state: latest 
     when: ansible_distribution == "Ubuntu"
+
+  - name: update repository index
+    dnf: 
+      update_cache: yes
+    when: ansible_distribution == "CentOS"
+
+  - name: install apache2 package
+    dnf: 
+      name: httpd
+      state: latest 
+    when: ansible_distribution == "CentOS"
